@@ -1,179 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jonathan Kofman's Portfolio</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-      <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Kofman's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experiance</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <h1>Welcome!<br>I'm Jonathan Kofman</br></h1>
-        <p>Advanced Manufacturing Engineer</p>
-      </div>
-    </div>
-  </div>
-  <!-- about page -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="C:\Users\jonko\OneDrive\Pictures\Jonathan.Kofman_Headshot06082023.jpeg">
+    <header id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Welcome!<br>I'm Jonathan Kofman</h1>
+                <p>Advanced Manufacturing Engineer</p>
+            </div>
         </div>
-        <div class="about-col-2">
-          <h2 class="subtitle">About Me</h2>
-          <p>Hi, my name is Jonathan Kofman and I am a master's student at Northeastern University in Boston, MA studying Advanced and Intelligent Manufacturing. With an undergraduate degree in Aerospace engineering, I believe I am the perfect blend of mechanical, electrical, and industrial engineering.
+    </header>
 
-            <br></br>
-            Major projects for me have been: 
-                ~Working on the 22A and 23A models of the Rutger's Formula Racing car as the aerodynamics lead
-                ~Being in charge of CNC and CAM designs for heat sink and ablative engines for Northeastern Aerospace Liquid Rocket Team
-                ~Solo designing and building a 2 stage mountable coilgun with a robot dog for navigation
-                ~Multi-stage pressurized water rocket for senior design project with ambission to break world record 
-                ~Studying and Passing FE Mechanical Engineering Exam
-          </p>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\jonko\OneDrive\Pictures\Jonathan.Kofman_Headshot06082023.jpeg" alt="Jonathan Kofman">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="subtitle">About Me</h2>
+                    <p>
+                        Hi, my name is Jonathan Kofman and I am a master's student at Northeastern University in Boston, MA studying Advanced and Intelligent Manufacturing. With an undergraduate degree in Aerospace engineering, I believe I am the perfect blend of mechanical, electrical, and industrial engineering.
+                    </p>
+                    <p>Major projects for me have been:</p>
+                    <ul>
+                        <li>Working on the 22A and 23A models of the Rutger's Formula Racing car as the aerodynamics lead</li>
+                        <li>Being in charge of CNC and CAM designs for heat sink and ablative engines for Northeastern Aerospace Liquid Rocket Team</li>
+                        <li>Solo designing and building a 2 stage mountable coilgun with a robot dog for navigation</li>
+                        <li>Multi-stage pressurized water rocket for senior design project with ambition to break world record</li>
+                        <li>Studying and Passing FE Mechanical Engineering Exam</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- experience page -->
-  <div id="experience">
-    <div class="container">
-      <div class="row">
-        <div class="experience-col-1">
-          <img src="images/pseg.jpg">
-        </div>
-        <div class="experience-col-2">
-          <h2 class="subtitle">Experience</h2>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('Rutgers Formula Racing')">Aerodyanmic Lead</p>
-            <p class="tab-links" onclick="opentab('Scarlet Flight')">Propulsion and Financial Lead</p>
-            <p class="tab-links" onclick="opentab('AerospaceNU')">CNC/CAM and Ablatives Lead</p>
-            <p class="tab-links" onclick="opentab('Robodog Project')">2-stage Coilgun mounted on Robot Dog</p>
-          </div>
-          <div class="tab-contents active-tab" id="Rutgers Formula Racing">
-            <ul>
-              <li><span>Oct 2020-Aug 2024</span><br></li>
-              <li><span>Aerodyanmic Lead</span><br>
-                While on the team I helped coordinate the aerodynamic design of the cars' many components using SolidWorks and ANSYS to perform lift and drag tests utilizing set parameters which included Angle of Attack, Velocity, Temperature, and Provided load. I also 
-                performed ANSYS CFD and FEA over the front/rear wing as well as the front/rear diffusers to create the optimal design with cornering and downforce being the main priorities. Once all design work was done, I generated a Bill of Materials for aerodynamic features including front/rear wing, front/rear diffuser, and side skirts
-                To create the the different molds which were then carbon fiber wrapped, the team utilized injection molding techniques to fabricate different components such as prototype wings for front and rear of the car. To help the electrical teams, I helped integrate HV disconnects to the main accumulator to disrupt power in case of emergency, and additionally helped assemble the wiring harness connecting different sub-components of the car.
-                </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="Scarlet Flight">
-            <ul>
-              <li><span>Jun 2023-Aug 2024</span><br></li>
-              <li><span>Propulsion and Financial Lead</span><br>
-                Scarlet FLight was my senior design project which I co-led alongisde 6 other seniors. On the team I led propulsion analysis which included but wasn't limited to: creating a test stand to hold the rocket body in place to perform thrust testing, while also optimizing body and nozzle design using SolidWorks for optimal flow, which was simulated using ANSYS, and finding the optimal launch pressure to ensure no failure to rocket while optimizing the maximum altitude.
-                My team and I Used SLA and FDM 3D printing methods to create lightweight but durable nosecones, fin holders, bulkheads, and electronic bay holders which were tested iteratively to manufacture them as quickly and cheaply as possible.
-                Our goal was to break the unofficial world record (1300ft) for Class B multi-stage pressurized water rockets according to WRA2 which we were simulated to beat by 255 feet using MATLAB software. Unfortunately, due to not having enough time to pursue this feat, we instead walked away with a top flight of 700 feet.
-                </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="AerospaceNU">
-            <ul>
-              <li><span>Sep 2024-Present</span><br></li>
-              <li><span>CNC/CAM and Ablatives Lead</span><br>
-                ●	Designed injector, nozzle, and combustion chamber for suitable mixing of Kerosene and Liquid Oxygen
-                ●	Machined bulkheads and planned out CNC path to machine injector, heat sink nozzle and heat sink chamber using SolidWorks CAM and Autodesk's HSMworks softwares
-                ●	Developed part drawings to ensure proper Geometric Dimensioning and Tolerance
-                ●	Crafted an SOP to allow for preliminary testing of Ablative 93-104 material to char and prevent burning of the combustion chamber at over 2000 degrees Fahrenheit
-                ●	Performed FEA analysis on injector components to ensure there are no stress fractures that can occur during deployment
-                
-                </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="Robodog Project">
-            <ul>
-              <li><span>Sep 2024-Present</span><br></li>
-              <li><span>2-stage Coilgun mounted on Robot Dog</span><br>
-                ●	Used SolidWorks to design enclosure, hardware protectection, and gimble mount to then be 3D printed using an Ender 3 Pro
-                ●	Used a Raspberry Pi model 5 to control the robot dog and guide it
-                ●	Powered coilgun using Li-Ion batteries
-                ●	Hand-wrapped solenoids using a lathe for ease of applying the enammeled copper wire
-            </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-  <!--Hobbies-->
-  <div id="hobbies">
-    <div class="container">
-      <div class="hobbies">
-        <h1 class="sub-title">Hobbies & Interests</h1>
-        <div class="pictures">
-          <figure>
-          <img src="images/hiking.jpg">
-          <figcaption> Hiking the Black Canyon of the <a href="https://www.nps.gov/blca/index.htm" target="_blank">Gunnison</a>!
-          </figcaption>
-          </figure>
-          <figure>
-          <img src="images/climbingpic.jpg">
-          <figcaption>Climbing in <a href="https://www.redrivergorge.com/things-to-do/climbing/" target="_blank">Red River Gorge</a>, Kentucky!</figcaption>
-          </figure>
-          <figure>
-          <img src="images/book.jpg">
-          <figcaption>I also love to read <a href="https://www.strandbooks.com/" target="_blank">books</a>!</figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Contact Info-->
-<div id="contact">
-  <div class="container">
-    <div class="contact">
-      <h3 class="sub-title">Contact Links</h3>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/j.kofman123/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="www.linkedin.com/in/jonathan-kofman-096129211"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/jonathan-kofman"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-  
-  <script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-      for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-      }
-      for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
+    </section>
 
-  <script>
-    var sidemenu=document.getElementById("sidemenu");
-    function openmenu(){
-      sidemenu.style.right="0";
-    }
-    function closemenu(){
-      sidemenu.style.right="-200px";
-    }
-  </script>
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="experience-col-1">
+                    <img src="images/pseg.jpg" alt="PSEG">
+                </div>
+                <div class="experience-col-2">
+                    <h2 class="subtitle">Experience</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Rutgers Formula Racing')">Aerodynamic Lead</p>
+                        <p class="tab-links" onclick="opentab('Scarlet Flight')">Propulsion and Financial Lead</p>
+                        <p class="tab-links" onclick="opentab('AerospaceNU')">CNC/CAM and Ablatives Lead</p>
+                        <p class="tab-links" onclick="opentab('Robodog Project')">2-stage Coilgun mounted on Robot Dog</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Rutgers Formula Racing">
+                        <ul>
+                            <li><span>Oct 2020-Aug 2024</span></li>
+                            <li>
+                                <span>Aerodynamic Lead</span>
+                                <p>While on the team I helped coordinate the aerodynamic design of the cars' many components using SolidWorks and ANSYS to perform lift and drag tests utilizing set parameters which included Angle of Attack, Velocity, Temperature, and Provided load. I also performed ANSYS CFD and FEA over the front/rear wing as well as the front/rear diffusers to create the optimal design with cornering and downforce being the main priorities. Once all design work was done, I generated a Bill of Materials for aerodynamic features including front/rear wing, front/rear diffuser, and side skirts. To create the different molds which were then carbon fiber wrapped, the team utilized injection molding techniques to fabricate different components such as prototype wings for front and rear of the car. To help the electrical teams, I helped integrate HV disconnects to the main accumulator to disrupt power in case of emergency, and additionally helped assemble the wiring harness connecting different sub-components of the car.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Scarlet Flight">
+                        <ul>
+                            <li><span>Jun 2023-Aug 2024</span></li>
+                            <li>
+                                <span>Propulsion and Financial Lead</span>
+                                <p>Scarlet Flight was my senior design project which I co-led alongside 6 other seniors. On the team I led propulsion analysis which included but wasn't limited to: creating a test stand to hold the rocket body in place to perform thrust testing, while also optimizing body and nozzle design using SolidWorks for optimal flow, which was simulated using ANSYS, and finding the optimal launch pressure to ensure no failure to rocket while optimizing the maximum altitude. My team and I Used SLA and FDM 3D printing methods to create lightweight but durable nosecones, fin holders, bulkheads, and electronic bay holders which were tested iteratively to manufacture them as quickly and cheaply as possible. Our goal was to break the unofficial world record (1300ft) for Class B multi-stage pressurized water rockets according to WRA2 which we were simulated to beat by 255 feet using MATLAB software. Unfortunately, due to not having enough time to pursue this feat, we instead walked away with a top flight of 700 feet.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="AerospaceNU">
+                        <ul>
+                            <li><span>Sep 2024-Present</span></li>
+                            <li>
+                                <span>CNC/CAM and Ablatives Lead</span>
+                                <ul>
+                                    <li>Designed injector, nozzle, and combustion chamber for suitable mixing of Kerosene and Liquid Oxygen</li>
+                                    <li>Machined bulkheads and planned out CNC path to machine injector, heat sink nozzle and heat sink chamber using SolidWorks CAM and Autodesk's HSMworks softwares</li>
+                                    <li>Developed part drawings to ensure proper Geometric Dimensioning and Tolerance</li>
+                                    <li>Crafted an SOP to allow for preliminary testing of Ablative 93-104 material to char and prevent burning of the combustion chamber at over 2000 degrees Fahrenheit</li>
+                                    <li>Performed FEA analysis on injector components to ensure there are no stress fractures that can occur during deployment</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Robodog Project">
+                        <ul>
+                            <li><span>Sep 2024-Present</span></li>
+                            <li>
+                                <span>2-stage Coilgun mounted on Robot Dog</span>
+                                <ul>
+                                    <li>Used SolidWorks to design enclosure, hardware protection, and gimbal mount to then be 3D printed using an Ender 3 Pro</li>
+                                    <li>Used a Raspberry Pi model 5 to control the robot dog and guide it</li>
+                                    <li>Powered coilgun using Li-Ion batteries</li>
+                                    <li>Hand-wrapped solenoids using a lathe for ease of applying the enameled copper wire</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="hobbies">
+        <div class="container">
+            <div class="hobbies">
+                <h2 class="sub-title">Hobbies & Interests</h2>
+                <div class="pictures">
+                    <figure>
+                        <img src="images/hiking.jpg" alt="Hiking">
+                        <figcaption>Hiking the Black Canyon of the <a href="https://www.nps.gov/blca/index.htm" target="_blank">Gunnison</a>!</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/climbingpic.jpg" alt="Climbing">
+                        <figcaption>Climbing in <a href="https://www.redrivergorge.com/things-to-do/climbing/" target="_blank">Red River Gorge</a>, Kentucky!</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/book.jpg" alt="Reading">
+                        <figcaption>I also love to read <a href="https://www.strandbooks.com/" target="_blank">books</a>!</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact">
+                <h2 class="sub-title">Contact Links</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/j.kofman123/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jonathan-kofman-096129211"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jonathan-kofman"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
