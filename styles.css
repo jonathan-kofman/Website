@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:rgba(18, 168, 168, 0.235);
+    background-color:rgb(64, 29, 130);
     color: white; 
 }
 #header{
@@ -42,7 +42,7 @@ nav ul li a::after{
     content: " ";
     width:0;
     height:3px;
-    background: rgb(1, 43, 255);
+    background: rgb(64, 29, 130);
     position:absolute;
     left:0;
     bottom:-6px;
@@ -55,12 +55,12 @@ nav ul li a:hover::after{
     margin-top:10%;
     font-size:37px;
     -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color:rgb(1, 43, 255);
+    -webkit-text-stroke-color:rgb(64, 29, 130);
 }
 .header-text h1{
     font-size:60px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color:rgb(1, 43, 255);
+    -webkit-text-stroke-color:rgb(64, 29, 130);
 }
 /* about page */
 #about{
@@ -118,7 +118,7 @@ nav ul li a:hover::after{
     content:" ";
     width:0;
     height:3px;
-    background: rgb(1, 43, 255);
+    background: rgb(64, 29, 130);
     position: absolute;
     left:0;
     bottom:-8px;
@@ -132,7 +132,7 @@ nav ul li a:hover::after{
     margin:10px 0;
 }
 .tab-contents ul li span{
-    color: rgb(1, 43, 255);
+    color: rgb(64, 29, 130);
     font-size:14px;
 }
 .tab-contents{
@@ -155,7 +155,7 @@ nav ul li a:hover::after{
     color:white;
 }
 .social-icons a:hover {
-    color: rgb(1, 43, 255);
+    color: rgb(64, 29, 130);
 }
 .sub-title{
     padding: 80px 0;
@@ -178,7 +178,7 @@ nav ul li a:hover::after{
     border-radius:15px;
 }
 figcaption a {
-    color: rgb(1, 43, 255);
+    color: rgb(64, 29, 130);
     text-decoration: underline; 
   }
 
@@ -205,7 +205,7 @@ nav .fas{
         font-size:25px;
     }
     nav ul{
-       background:rgba(18, 168, 168, 0.235);
+       background:rgb(64, 29, 130);
        position:fixed;
        top:0;
        right:-200px;
